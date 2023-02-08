@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;900&family=Public+Sans:wght@100;200;300&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* nav bar */
+.navbarWrapper {
+  height: 120px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  padding-inline: 50px;
+  border-bottom: 1px solid #EFEFFF;
+  background: #FCFCFF;
+}
+
+/* img log */
+.logo {
+  width: 140px;
+  height: 40px;
+}
+
+/* menu */
+.menuWrapper {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.menuBtn {
+  padding: 10px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuBtnText {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #202142;
+  opacity: 0.8;
 }
+
+/* navbar left */
+.navbarLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px
+}
+
+.notifBtn {
+  width: 54px;
+  height: 54px;
+  padding: 15px 16.5px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bellIcon {
+  position: absolute;
+  z-index: 1;
+}
+
+.notifCircleWrapper {
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 50%;
+  left: 49%;
+  top: 36%;
+  z-index: 2;
+}
+
+.notifCircle {
+  width: 8px;
+  height: 8px;
+  background: #FF6A95;
+  border-radius: 50%;
+}
+
+/* uplaod button */
+.uploadBtn {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 15px 30px;
+  background: #202142;
+  border-radius: 10px;
+}
+
+/* avatar img */
+.avatarImg {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.uploadIcon {
+  width: 24px;
+  height: 24px;
+}
+
